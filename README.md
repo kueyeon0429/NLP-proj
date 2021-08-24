@@ -10,3 +10,8 @@
 `crawling_melon2.py` 실행 시  
 `music_info.csv` 파일 생성  
 title, artist, lyric, genre, era
+
+***
+
+`word_cloud.py`  
+시대별 가사의 키워드 분석
