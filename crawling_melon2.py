@@ -17,7 +17,7 @@ driver.implicitly_wait(10)
 titles = []  # 제목
 artists = [] # 아티스트
 lyrics = [] # 가사
-jangleus = [] # 장르
+genres = [] # 장르
 eras = [] # 시대
 
 # 시대 리스트
@@ -53,8 +53,8 @@ def craw_lyrics(era):
 
 
     # 장르 크롤링
-    jangleu = driver.find_element_by_xpath('//*[@id="downloadfrm"]/div/div/div[2]/div[2]/dl/dd[3]')
-    jangleus.append(jangleu.text)
+    genre = driver.find_element_by_xpath('//*[@id="downloadfrm"]/div/div/div[2]/div[2]/dl/dd[3]')
+    genres.append(genre.text)
 
 
     # 시대
@@ -104,7 +104,7 @@ for e in eras_list:
 
 
 # 데이터 프레임 생성
-df = pd.DataFrame({"title": titles, "artist": artists, "lyric": lyrics, "jangleu": jangleus, "era": eras})
+df = pd.DataFrame({"title": titles, "artist": artists, "lyric": lyrics, "genre": genres, "era": eras})
 
 
 
