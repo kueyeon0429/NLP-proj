@@ -55,4 +55,4 @@ for i in range(100):
 df = pd.DataFrame({"lyric": all_lyrics, "label": 0})
 
 # csv 파일로 저장
-df.to_csv("crawling_melon.csv",  encoding='utf-8-sig')
+df.to_csv("lyrics.csv",  encoding='utf-8-sig')
