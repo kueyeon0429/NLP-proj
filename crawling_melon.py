@@ -12,6 +12,20 @@ driver = webdriver.Chrome()
 driver.get('https://www.melon.com/chart/index.htm')
 driver.implicitly_wait(10)
 
+'''
+test set 만들 때  11~13 line을 18~26 line으로 대체합니다
+
+# 멜론 웹 페이지 접근
+#driver.get('https://www.melon.com/chart/index.htm')
+driver.implicitly_wait(10)
+
+# 작년꺼로
+driver.find_element_by_xpath('//*[@id="conts"]/div[3]/div/button').click()
+driver.find_element_by_xpath('//*[@id="conts"]/div[3]/div/div/dl/dt/button[1]/span/span').click()
+driver.find_element_by_xpath('//*[@id="conts"]/div[3]/div/div/dl/dd[1]/ul/li[8]/a').click()
+driver.find_element_by_xpath('//*[@id="conts"]/div[3]/div/button').click()
+'''
+
 # 모~든 가사들을 모으는 리스트
 all_lyrics = []
 
