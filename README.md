@@ -33,9 +33,9 @@ music_info.csv 사용
 ***
 
 `sentiment_analysis.py` 감성 분류  
-- [ ] `data_set > x_train.csv`  
-- [ ] `data_set > x_test.csv`  
-- [x] `data_set > x_train_pad.csv` 패딩된 데이터  
-- [x] `data_set > x_test_pad.csv` 패딩된 데이터
+- [ ] `data_set > x_train_pre.csv`  패딩X  
+- [ ] `data_set > x_test_pre.csv`  패딩X  
+- [x] `data_set > x_train.csv`  
+- [x] `data_set > x_test.csv` 
 - [x] `data_set > y_train.csv` 
 - [x] `data_set > y_test.csv`
